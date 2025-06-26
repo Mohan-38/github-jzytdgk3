@@ -14,7 +14,7 @@ import {
   Copy
 } from 'lucide-react';
 import { verifyDownloadToken, getClientIP, requestNewDownloadLinks, validateEmail } from '../utils/secureDownloads';
-import { formatFileSize } from '../utils/storage';
+import { validateEmail } from '../utils/email';
 
 const SecureDownloadPage = () => {
   const { token } = useParams<{ token: string }>();
